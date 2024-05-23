@@ -1,0 +1,30 @@
+Var
+nome: caractere;
+endereco: caractere;
+cidade: caractere;
+cpf: inteiro;
+rg: inteiro;
+
+Inicio
+escreva("Coloque seu nome: ");
+leia(nome);
+
+escreva("Coloque seu endereço: ");
+leia(endereco);
+
+escreva("Coloque sua cidade: ");
+leia(cidade);
+
+escreva("Coloque os números do seu CPF: ");
+leia(cpf);
+
+escreva("Coloque os números do seu RG: ");
+leia(rg);
+
+escreva("Seu nome é: ", nome);
+escreva("Seu endereço é: ", endereco);
+escreva("Sua cidade é: ", cidade);
+escreva("Seu CPF é: ", cpf)
+escreva("Seu RG é: ", rg);
+
+Fimalgoritmo
