@@ -1,0 +1,21 @@
+1-Vale lembrar que é sempre bom evitar cedilhas, espaços e acentos exclusivos de português ou outras línguas, ja que pode dar erro no código.
+Os indicadores devem ser claros e relacionados aos dados que irão conter. O uso de minúsculas também depende da linguagem, mas geralmente é preferível:
+
+nome; cpf; rg; altura; endereco
+
+
+2- Em algumas linguagens não há necessidade de declaração, já que isso ocorre automaticamente. Mas ficaria assim:
+
+nome<-(caractere)
+cpf<-(inteiro)
+rg<-(inteiro)
+altura<-(real)
+endereco<-(caractere)
+
+3- Nessa etapa cada linguagem tem sua sintaxe, mas no geral você indica qual variável e qual valor(dado) será atribuido:
+
+nome = "José Almeida da Silva"
+cpf = 12345678900
+rg = 9517530
+altura = 1.78
+endereco = "Rua A, 380 – Centro – Recife/PE"
