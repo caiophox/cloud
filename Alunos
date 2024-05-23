@@ -1,0 +1,3 @@
+No primeiro exemplo de 25 alunos não havia como ter uma fileira ou uma coluna de alunos balanceada entre Português e Matemática, cada fileira ou coluna possuía uma 'maioria'.
+Com a adição de novos alunos, essa propriedade se manteve.
+Após a troca de lugares, as fileiras 5 e 6 ficaram divididas homogeneamente, o que indica a mudança.
