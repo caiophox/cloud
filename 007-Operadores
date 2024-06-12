@@ -1,0 +1,32 @@
+nota = 10
+primeiro = (nota <= 10)
+primeiro = True
+
+nota = 6
+faltas = 4
+segundo = ((nota <= 6) & (faltas <= 3))
+segundo = (True & False)
+segundo = False
+
+convidados = 3
+fumante = False
+terceiro = ((convidados > 4) | (fumante == True))
+terceiro = (False | False)
+terceiro = False
+
+dia = "qua"
+quarto = ((dia == "sab") | (dia == "dom"))
+quarto = (False | False)
+quarto = False
+
+feriado = True
+quinto = not(feriado == False)
+quinto = not(False)
+quinto = True
+
+dia = "ter"
+feriado = False
+sexto = ((dia == "seg") | ~(feriado == False))
+sexto = (False) | ~(True))
+sexto = (False | False)
+sexto = False
