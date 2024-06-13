@@ -9,5 +9,5 @@ def calcular(num1, num2, operador):
   elif operador == 4:
     resultado = num1 / num2
   else:
-    resultado = "Erro. Esta operação não existe"
+    resultado = 0
   print(resultado)
