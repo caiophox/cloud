@@ -1,0 +1,13 @@
+def calcular(num1, num2, operador):
+  resultado = 0
+  if operador == 1:
+    resultado = num1 + num2
+  elif operador == 2:
+    resultado = num1 - num2
+  elif operador == 3:
+    resultado = num1 * num2
+  elif operador == 4:
+    resultado = num1 / num2
+  else:
+    resultado = "Erro. Esta operação não existe"
+  print(resultado)
