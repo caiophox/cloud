@@ -1,0 +1,24 @@
+def listarQuartos():
+    for quarto in range(1, 21):
+        if quarto == 13:
+            continue
+        print(quarto)
+listarQuartos()
+
+# com o while
+i = 20
+while i > 1:
+  if i == 13:
+    i -= 1
+    continue
+  print(i)  
+  i -= 1
+
+#ao contrário
+i = 20
+while i > 0:
+  if i == 13:
+    i -= 1
+    continue
+  print(i)  
+  i -= 1
