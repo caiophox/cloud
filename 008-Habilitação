@@ -1,0 +1,13 @@
+def categorizarCarteira(rodas, peso, pessoas):
+  if rodas < 4:
+    return "A"
+  elif rodas > 3 & pessoas < 9 & peso < 3501:
+    return "B"
+  elif rodas > 3 & peso > 3499 & peso < 6001:
+    return "C"
+  elif rodas > 3 & pessoas > 8:
+    return "D"
+  elif rodas > 3 & peso > 6000:
+    return "E"
+  else:
+    return "Dados inválidos"
