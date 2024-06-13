@@ -1,0 +1,35 @@
+def rodarPrograma():
+  status = True
+  while status:
+    print("Calculadora ligada. Escolha sua opção:")
+    print("1 - Soma")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+    print("5 - Sair")
+    inputOp = int(input("Digite sua opção: "))
+    if inputOp == 1:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      print(num1 + num2)
+      continue
+    elif inputOp == 2:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      print(num1 - num2)
+      continue
+    elif inputOp == 3:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      print(num1 * num2)
+      continue
+    elif inputOp == 4:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      print(num1 / num2)
+      continue
+    elif inputOp == 5:
+      print("Calculadora desligada.")
+      status = False
+    
+rodarPrograma()
