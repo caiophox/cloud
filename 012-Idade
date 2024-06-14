@@ -1,0 +1,17 @@
+def calcularIdade():
+  info = True
+  nome = input("Por favor digite seu nome completo: ")
+  while info:
+    try:
+      anoNascimento = int(input("Por favor digite o ano de seu nascimento (entre 1922 e 2021): "))
+      if 1921 < anoNascimento < 2022:
+        info = False
+        idade = 2022 - anoNascimento
+        print(f"Olá {nome}, você tinha {idade} no ano de 2022.")
+        break
+      else:
+        print("Ano inválido. Digite um número entre 1922 e 2021.")
+    except ValueError:
+      print("Por favor digite um valor numérico")
+      
+calcularIdade()
