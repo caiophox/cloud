@@ -1,0 +1,5 @@
+produtos = ["Arroz Integral", "Feijão", "Repolho", "Lentilha", "Macarrão"]
+nascimentos = [1970, 1974, 1980, 1988, 1965]
+
+print(produtos)
+print(nascimentos)
