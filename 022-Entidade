@@ -1,20 +1,13 @@
-Entidade: Funcionário
+representação no br modelo web: https://app.brmodeloweb.com/#!/conceptual/66c6516354bfb2f8189a0def
+
+Entidade: Jogador
 
     Atributos Simples:
-        ID_Funcionário (um identificador único para cada funcionário)
+        ID_Jogador (um identificador único para cada jogador)
+        Nome de Usuário (nome único do jogador no jogo)
 
     Atributos Compostos:
-        Nome (composto por: Primeiro_Nome e Último_Nome)
+        Endereço (composto por: Rua, Número, Cidade, Estado, e CEP)
 
     Atributos Multivalorados:
-        Telefone (um funcionário pode ter múltiplos números de telefone)
-
-exemplo:
-Funcionário
-- ID_Funcionário: 001
-- Nome:
-  - Primeiro_Nome: João
-  - Último_Nome: Silva
-- Telefone:
-  - (11) 98765-4321
-  - (11) 12345-6789
+        Jogos (um jogador pode ter múltiplos jogos na sua coleção)
