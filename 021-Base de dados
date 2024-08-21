@@ -1,0 +1,26 @@
+conteúdo totalmente original, definitivamente não foi gerado pelo chatGPT pra essa atividade inovadora da proz.
+1. MySQL
+
+    Descrição: MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto. Ele utiliza a linguagem SQL (Structured Query Language) para gerenciar e manipular dados. É conhecido por sua robustez, escalabilidade e facilidade de uso.
+
+    Características:
+        Open Source: MySQL é distribuído sob a licença GPL, o que permite que os usuários usem, modifiquem e distribuam o software sem custos.
+        Desempenho e Escalabilidade: Oferece alta performance e é escalável, adequado para pequenas aplicações até grandes sistemas de dados empresariais.
+        Popularidade: É amplamente utilizado em ambientes web e é uma parte fundamental da pilha LAMP (Linux, Apache, MySQL, PHP/Perl/Python).
+        Suporte e Comunidade: Tem uma grande comunidade de desenvolvedores e uma ampla gama de ferramentas e recursos de suporte.
+
+    Casos de Uso: MySQL é frequentemente utilizado para aplicações web, e-commerce, e sistemas de gerenciamento de conteúdo, como WordPress e Joomla.
+
+2. Microsoft SQL Server
+
+    Descrição: Microsoft SQL Server é um sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft. É conhecido por sua integração com outras ferramentas e tecnologias da Microsoft, como o .NET Framework.
+
+    Características:
+        Integração: Oferece integração nativa com o ecossistema Microsoft, o que facilita o uso em ambientes corporativos que já utilizam outras ferramentas Microsoft.
+        Funcionalidades Avançadas: Inclui funcionalidades avançadas como processamento analítico online (OLAP), data warehousing, e ferramentas de Business Intelligence (BI).
+        Segurança e Administração: Possui recursos robustos de segurança e administração, incluindo criptografia de dados e políticas de controle de acesso.
+        Escalabilidade: Suporta grandes volumes de dados e transações, e é adequado para ambientes empresariais de grande escala.
+
+    Casos de Uso: SQL Server é frequentemente utilizado em grandes corporações para sistemas de ERP, CRM, e aplicações de BI, além de ser uma escolha comum para sistemas financeiros e administrativos.
+
+Ambos os sistemas são poderosos e oferecem uma variedade de recursos que atendem a diferentes necessidades e ambientes, tornando-os escolhas populares no mercado de trabalho.
