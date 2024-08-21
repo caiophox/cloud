@@ -1,0 +1,20 @@
+Entidade: Funcionário
+
+    Atributos Simples:
+        ID_Funcionário (um identificador único para cada funcionário)
+
+    Atributos Compostos:
+        Nome (composto por: Primeiro_Nome e Último_Nome)
+
+    Atributos Multivalorados:
+        Telefone (um funcionário pode ter múltiplos números de telefone)
+
+exemplo:
+Funcionário
+- ID_Funcionário: 001
+- Nome:
+  - Primeiro_Nome: João
+  - Último_Nome: Silva
+- Telefone:
+  - (11) 98765-4321
+  - (11) 12345-6789
