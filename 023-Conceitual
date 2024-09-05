@@ -1,0 +1,3 @@
+Ninguém fez essa atividade porque é uma imagem e reescrever todos os dados dá muito trabalho.
+Se eu fosse fazer, colocaria colunas separadas para cada elemento do endereço (rua/numero/bairro/cidade/estado/país). Isso transforma essa coluna composta em simples.
+Para as colunas multivaloradas (e-mail e telefone), faria duas tabelas separadas, cada uma com o mesmo pk_identificador
