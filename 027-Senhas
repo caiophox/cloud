@@ -1,0 +1,10 @@
+Os métodos tradicionais de complicar senhas, como exigir misturas de diferentes tipos de caracteres ou proibir repetições consecutivas, estão ultrapassados e são menos eficazes em termos de segurança. O próprio NIST (Instituto Nacional de Padrões e Tecnologia dos EUA) não recomenda mais essas práticas, pois limitar as senhas dessa forma, na verdade, reduz o número de combinações possíveis, tornando-as mais previsíveis. Além disso, a exigência de trocas frequentes de senha acaba incentivando comportamentos inseguros, como anotar as senhas ou usar variações fáceis de adivinhar, diminuindo a segurança em vez de aumentá-la.
+
+Tanto a complexidade das senhas quanto a expiração periódica não são mais consideradas boas práticas, pois, na maioria dos casos, causam mais danos do que benefícios. Em vez de aumentar a proteção, essas políticas levam as pessoas a adotarem senhas mais fracas ou a reutilizá-las, tornando-as alvos mais fáceis para ataques. Com o uso de gerenciadores de senhas, é possível criar senhas longas, únicas e altamente seguras, sem que o usuário precise memorizá-las ou anotá-las, o que aumenta a segurança geral sem as desvantagens das abordagens tradicionais.
+
+Links para referências:
+https://www.wsj.com/articles/annoying-password-rules-actually-make-us-less-secure-a05edb70
+https://pages.nist.gov/800-63-3/sp800-63b.html#sec8
+https://markilott.medium.com/how-most-password-policies-make-us-less-secure-69476ca9fe92
+https://www.it.ucsb.edu/general-security-resources/password-best-practices
+https://www.sans.org/blog/everything-you-need-to-know-about-passwords-for-your-organization/
