@@ -1,0 +1,60 @@
+-- Tabela Produtos
+CREATE TABLE Produtos (
+    ProdutoID SERIAL PRIMARY KEY,
+    NomeProduto VARCHAR(100),
+    Preco DECIMAL(10, 2)
+);
+
+-- Tabela Pedidos
+CREATE TABLE Pedidos (
+    PedidoID SERIAL PRIMARY KEY,
+    DataPedido DATE
+);
+
+-- Tabela ItensPedido
+CREATE TABLE ItensPedido (
+    ItemPedidoID SERIAL PRIMARY KEY,
+    PedidoID INT,
+    ProdutoID INT,
+    Quantidade INT,
+    FOREIGN KEY (PedidoID) REFERENCES Pedidos(PedidoID),
+    FOREIGN KEY (ProdutoID) REFERENCES Produtos(ProdutoID)
+);
+
+-- 3. Inserção de dados
+
+-- Inserindo dados na tabela Produtos
+INSERT INTO Produtos (NomeProduto, Preco) VALUES 
+('Notebook', 3500.00),
+('Smartphone', 2000.00),
+('Teclado', 150.00);
+
+-- Inserindo dados na tabela Pedidos
+INSERT INTO Pedidos (DataPedido) VALUES 
+('2024-09-01'),
+('2024-09-01'),
+('2024-09-02');
+
+-- Inserindo dados na tabela ItensPedido
+INSERT INTO ItensPedido (PedidoID, ProdutoID, Quantidade) VALUES 
+(1, 1, 2),
+(2, 2, 1),
+(3, 3, 5);
+
+-- 4. Criação da Procedure para gerar o relatório diário
+
+CREATE OR REPLACE PROCEDURE gerar_relatorio_diario()
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    -- Exibe o relatório da quantidade de produtos vendidos por dia
+    SELECT DataPedido, SUM(Quantidade) AS TotalProdutosVendidos
+    FROM Pedidos
+    JOIN ItensPedido ON Pedidos.PedidoID = ItensPedido.PedidoID
+    GROUP BY DataPedido
+    ORDER BY DataPedido;
+END;
+$$;
+
+-- 5. Executando a Procedure para gerar o relatório
+CALL gerar_relatorio_diario();
