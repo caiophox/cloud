@@ -1,0 +1,45 @@
+1. Confidencialidade
+
+    Conceito: A confidencialidade garante que apenas pessoas autorizadas possam acessar os dados. Dados sensíveis, como informações de clientes e transações financeiras, devem ser protegidos contra acessos não autorizados.
+    Implementação no banco de dados:
+        Controle de Acesso: Implementar um sistema de controle de acesso robusto, com privilégios definidos para cada usuário ou grupo. O uso de níveis de acesso (por exemplo, administrador, analista, operador) pode limitar quem tem permissão para visualizar, editar ou excluir determinados dados.
+        Criptografia: Criptografar dados sensíveis tanto em trânsito quanto em repouso. Isso inclui senhas, detalhes financeiros e pessoais dos clientes. O uso de criptografia SSL/TLS para a comunicação entre o banco e os usuários evita interceptações de dados.
+        Mascaramento de Dados: Aplicar técnicas de mascaramento ou pseudonimização para dados que não devem ser completamente expostos, como ocultar parte dos números de cartão de crédito.
+
+2. Integridade
+
+    Conceito: A integridade garante que os dados permaneçam precisos e completos ao longo de seu ciclo de vida, evitando adulterações ou modificações não autorizadas.
+    Implementação no banco de dados:
+        Validação de Dados: Utilizar regras de integridade referencial, restrições (constraints), e triggers para assegurar que os dados armazenados estejam corretos e dentro dos padrões estabelecidos (ex.: evitar a inserção de dados inválidos ou duplicados).
+        Logs de Auditoria: Implementar auditorias que rastreiem alterações feitas no banco de dados, como quem alterou, o que foi alterado, e quando a alteração ocorreu. Isso ajuda a detectar e investigar mudanças indevidas.
+        Assinaturas Digitais e Hashing: Utilizar algoritmos de hashing ou assinaturas digitais para verificar que os dados não foram alterados acidentalmente ou maliciosamente entre dois pontos no sistema.
+
+3. Disponibilidade
+
+    Conceito: A disponibilidade assegura que os dados estejam acessíveis e disponíveis para usuários autorizados sempre que necessário, sem interrupções ou demoras não planejadas.
+    Implementação no banco de dados:
+        Backup e Recuperação: Estabelecer um sistema robusto de backups regulares e planos de recuperação de desastres (DRP). Isso garante que os dados possam ser restaurados rapidamente em caso de falhas de hardware, ataques de ransomware ou outros desastres.
+        Alta Disponibilidade (HA): Configurar clusters de banco de dados ou replicação de dados para garantir que o sistema continue operando mesmo em caso de falhas em um ou mais servidores.
+        Prevenção de DDoS e Sobrecargas: Implementar sistemas de monitoramento para detectar e mitigar ataques de negação de serviço (DDoS) e limitar o uso de recursos por usuários individuais, evitando sobrecarga.
+
+4. Autenticidade
+
+    Conceito: A autenticidade assegura que os dados e a identidade de quem acessa ou altera informações no sistema sejam verdadeiros e confiáveis.
+    Implementação no banco de dados:
+        Autenticação Multifatorial (MFA): Exigir autenticação multifatorial para acessos ao banco de dados, especialmente para usuários com privilégios elevados. Isso garante que apenas usuários autenticados tenham acesso.
+        Certificados Digitais: Usar certificados digitais para autenticar máquinas e sistemas que se conectam ao banco de dados, assegurando que apenas dispositivos confiáveis se comuniquem com o sistema.
+        Identificação de Sessões: Implementar mecanismos de rastreamento de sessões de usuários, para garantir que os acessos sejam legítimos e prevenir hijacking de sessões.
+
+5. Auditabilidade
+
+    Conceito: A auditabilidade permite que as ações realizadas dentro do banco de dados sejam rastreadas e verificadas, garantindo que qualquer alteração possa ser rastreada até a origem.
+    Implementação no banco de dados:
+        Logs de Auditoria e Histórico de Transações: Configurar logs detalhados de quem acessou o banco de dados, quais alterações foram feitas, e quando. Essas informações são críticas em investigações e para garantir a conformidade com regulamentos.
+        Relatórios Regulares de Segurança: Gerar relatórios periódicos que revisem atividades suspeitas e mudanças nos dados. Esses relatórios podem ser analisados por equipes de segurança.
+
+6. Conformidade
+
+    Conceito: Garantir que o banco de dados esteja em conformidade com as leis e regulamentações aplicáveis, como a Lei Geral de Proteção de Dados (LGPD) no Brasil, o Regulamento Geral sobre a Proteção de Dados (GDPR) na Europa, entre outras.
+    Implementação no banco de dados:
+        Política de Retenção de Dados: Implementar políticas claras de retenção e descarte de dados, em conformidade com as leis de proteção de dados. Isso garante que dados pessoais não sejam armazenados por mais tempo do que o necessário.
+        Consentimento de Dados: Garantir que os dados dos clientes só sejam armazenados e utilizados após obter o consentimento explícito, conforme exigido por muitas regulamentações de privacidade.
